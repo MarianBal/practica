@@ -720,16 +720,110 @@ for(var numero= 1000; numero>= 0; numero = numero-1){
 
 //-----------------------------------
 
-//Ejercicio 97
+//Ejercicio 98
 
 //Sumar los números del 0 al 1000
 //Cortar la ejecución si la suma es superior a 100
 //Mostrar el resultado final en consola
 
+/*
+var numero = 0;
+
+for(var i = 1; i<=1000; i++){
+
+    var resultado = numero + i;
+
+    if (resultado > 100){
+
+        console.log(resultado);
+
+        break;
+
+    } else{
+
+        numero = resultado;
+    }
+
+}
+
+*/
+//-----------------------------------
+
+//Ejercicio 99
+
+//Sumar los números pares del 0 al 10000
+//Cortar la ejecución al encontrar 10 números pares
+//Mostrar en consola el resultado de los números hasta el momento del corte
+/*
+var numero = 0;
+
+var contador = 1;
+
+for(var i = 2; i<=1000; i= i+2){
+
+    if(contador<=10 ){
+
+        var resultado = numero + i;
+
+        numero = resultado;
+
+        contador++;
+
+
+    }else{
+
+    console.log(numero);
+    
+    break;
+
+    }
+}
+*/
+
+//-----------------------------------
+
+//Ejercicio 100
+
+//Mostrar en consola el siguiente dibujo de un cuadro lleno:
+//*****
+//*****
+//*****
+//*****
+//*****
+
+/*
+var a = '*';
+
+for(var contador= 1; contador<=5; contador++){
+
+    for(var estrella=1; estrella<=5; estrella++){
+
+        a= a+'*';
+
+    }
+
+    console.log(a);
+
+    a='*';
+}
+
+
+*/
+//-----------------------------------
+
+//Ejercicio 101
+
+//Mostrar en consola el siguiente dibujo de un cuadrado hueco:
+//*****
+//*   *
+//*   *
+//*   *
+//*****
+
 
 
 //Tenemos que imprimir todos estos nombres con las mayusculas correctas. Es mas rapido si usamos un “for”.
-
+/*
 var alumnas = [ 'Maria', 'esther', 'consuelo', 'Barbara', 'Luisana', 'pancracia', 'luzbelita', 'Jimena' ];
 
 for (var i = 0; i<alumnas.length; i++){
@@ -744,3 +838,4 @@ for (var i = 0; i<alumnas.length; i++){
 
     console.log(inicial + nombre);
 }
+*/
