@@ -726,14 +726,21 @@ for(var numero= 1000; numero>= 0; numero = numero-1){
 //Cortar la ejecución si la suma es superior a 100
 //Mostrar el resultado final en consola
 
-/*
-var alumnas = [
-    'Maria',
-    'esther',
-    'consuelo',
-    'Barbara',
-    'Luisana',
-    'pancracia',
-    'luzbelita',
-    'Jimena'
-   ]*/
+
+
+//Tenemos que imprimir todos estos nombres con las mayusculas correctas. Es mas rapido si usamos un “for”.
+
+var alumnas = [ 'Maria', 'esther', 'consuelo', 'Barbara', 'Luisana', 'pancracia', 'luzbelita', 'Jimena' ];
+
+for (var i = 0; i<alumnas.length; i++){
+
+    var nombre = alumnas[i];
+
+    var inicial = nombre[0];
+
+    inicial = inicial.toUpperCase();
+
+    nombre = nombre.slice(1,nombre.length);
+
+    console.log(inicial + nombre);
+}
