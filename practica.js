@@ -807,8 +807,8 @@ for(var contador= 1; contador<=5; contador++){
     a='*';
 }
 
-
 */
+
 //-----------------------------------
 
 //Ejercicio 101
@@ -820,7 +820,24 @@ for(var contador= 1; contador<=5; contador++){
 //*   *
 //*****
 
+var a = '*';
 
+var contador;
+
+for(contador= 1; contador<=5; contador++){
+
+    for(var estrella=1; estrella<=5; estrella++){
+
+        a= a+'*';
+
+    }
+
+    console.log(a);
+
+    a='*';
+
+    
+}
 
 //Tenemos que imprimir todos estos nombres con las mayusculas correctas. Es mas rapido si usamos un “for”.
 /*
