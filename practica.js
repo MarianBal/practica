@@ -759,7 +759,7 @@ var numero = 0;
 
 var contador = 1;
 
-for(var i = 2; i<=1000; i= i+2){
+for(var i = 2; i<=1000; i+=2){
 
     if(contador<=10 ){
 
@@ -819,7 +819,7 @@ for(var contador= 1; contador<=5; contador++){
 //*   *
 //*   *
 //*****
-
+/*
 var a = '*';
 
 var contador;
@@ -830,6 +830,12 @@ for(contador= 1; contador<=5; contador++){
 
         a= a+'*';
 
+        if(contador==2 || contador == 2 || contador == 3){
+
+            b= 
+            a(searchvalue, newvalue
+        }
+
     }
 
     console.log(a);
@@ -838,7 +844,7 @@ for(contador= 1; contador<=5; contador++){
 
     
 }
-
+*/
 //Tenemos que imprimir todos estos nombres con las mayusculas correctas. Es mas rapido si usamos un “for”.
 /*
 var alumnas = [ 'Maria', 'esther', 'consuelo', 'Barbara', 'Luisana', 'pancracia', 'luzbelita', 'Jimena' ];
@@ -856,3 +862,134 @@ for (var i = 0; i<alumnas.length; i++){
     console.log(inicial + nombre);
 }
 */
+/*
+var string = ['soy', 'un', 'array', 'de', 'strings'];
+
+var arrayDeBooleanos = [['array', 'de'], [1,2]];
+
+var numeros = [1,2.3,4];
+
+var stringsYNumeros = ['uno', 1, 'dos', 2, 'tres', 3];
+
+var primerValor = string[0];
+
+string[0]= 'Hola, soy';
+
+console.log(string[0]);
+
+*/
+///----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+//ARRAYS
+
+
+
+//-----------------------------------
+
+//Ejercicio 002
+
+//Declarar una variable bandas y asignarle un array con tus bandas favoritas (al menos 10).
+
+//Guardar en variables el valor del primer, tercer y sexto elemento del array.
+
+//Mostrar por consola los siguientes 3 mensajes:
+
+//La banda en primer lugar es: [NOMBRE_DE_LA_PRIMER_BANDA]
+//La banda en tercer lugar es: [NOMBRE_DE_LA_TERCER_BANDA]
+//La banda en sexto lugar es: [NOMBRE_DE_LA_SEXTA_BANDA]
+/*
+
+var bandas = ['Led Zeppelin', 'Divididos', 'Ghost', 'Iron Maiden', 'Pink Floyd', 'Foo figthers', 'Sumo'];
+
+console.log(bandas[0]);
+
+console.log(bandas[2]);
+
+console.log(bandas[5]);
+
+*/
+
+//-----------------------------------
+
+//Ejercicio 004
+
+
+//Crear el siguiente array con el nombre datos: [27, true, 'La edad de la persona es: ']
+//Si el segundo item en el array datos es verdadero entonces
+//Mostrar en consola: La edad de la persona es: 27
+//Utilizar el primer y último item del array datos para formar el string del mensaje pedido
+/*
+var datos = [27, true, 'La edad de la persona es: '];
+
+if(datos[1]== true){
+    console.log(datos[2], datos[0]);
+}*/
+
+
+//-----------------------------------
+
+//Ejercicio 008
+
+//Declarar una variable etiquetasHtml con varios de los nombres de las etiquetas de HTML que ya conocés
+//Mostrar en consola el nombre de la 2da etiqueta del array en mayúsculas
+//Mostrar en consola el nombre de la 5ta etiqueta del array en minúsculas
+//Mostrar en consola la cantidad de etiquetas guardadas en el array
+/*
+var etiquetasHtml = ['nav', 'header', 'Footer', 'navbar', 'button', 'textArea', 'H1', 'H2', ];
+
+console.log(etiquetasHtml[1].toUpperCase());
+
+console.log(etiquetasHtml[4].toLowerCase());
+
+console.log(etiquetasHtml.length);
+
+*/
+/*
+var strings = ['soy', 'un', 'array', 'de', 'strings'];
+
+console.log(strings);
+
+strings.push('Hola');
+console.log(strings);
+*/
+/*
+var strings = ['soy', 'un', 'array', 'de', 'strings'];
+
+console.log(strings);
+strings.unshift('primero');
+console.log(strings);
+
+strings.shift();
+console.log(strings.shift());
+
+console.log(strings);
+
+strings.pop();
+console.log(strings.length);
+
+console.log(strings.pop());
+
+*/
+/*
+var stringsDesordenados = ['zeta', 'xilofon', 'agua', 'aaab'];
+
+console.log(stringsDesordenados.sort());
+*//*
+
+var numerosDesordenados = [4,2,3,1];
+
+console.log(numerosDesordenados.sort());
+
+*/
+
+//Partiendo del siguiente array de números var numeros = [6, 1, 2, 3, 4, 5];
+//Eliminar el primer elemento, y agregarlo al final del array.
+//Mostrar el resultado final.
+
+var numeros = [6, 1, 2, 3, 4, 5];
+
+numeros.shift();
+
+numeros.push(6);
+
+console.log(numeros);
