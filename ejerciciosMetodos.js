@@ -1122,7 +1122,7 @@ console.log(soloStrings);
 //Tenemos otro array playlistEscuchada que tiene canciones que ya escuchamos anteriormente.
 //Usando filter, queremos crear una nueva lista que solo contenga aquellas canciones guardadas en playlist que no están en playlistEscuchada
 //Guarda el resultado en la variable playlistSinEscuchar
-
+/*
 var playlist = ['Smells Like Teen Spirit', 'Everlong', 'Come As You Are', 'The Pretender', 'Heart-Shaped Box', 'Learn to Fly', 'Lithium'];
 var playlistEscuchada = ['The Pretender', 'Lithium', 'Come As You Are']
 
@@ -1140,3 +1140,207 @@ console.log(playlistSinEscuchar);
 
 // deberia mostrar
 // [ 'Smells Like Teen Spirit', 'Everlong', 'Heart-Shaped Box', 'Learn to Fly' ]
+*/
+
+
+//--------------------------------------
+
+
+//Ejercicio arr_047
+
+
+//Tenemos un array llamado numbers con números enteros al azar.
+//Utilizando reduce, queremos calcular la suma de todos los números que están en el array.
+//Por ejemplo: Si tenemos [1, 2, 3], la suma de todos los números es 6
+/*
+var numbers = [6, 1, 34, 94, 3, 17];
+var sum = numbers.reduce(function(total,numero){
+  return total + numero;
+});
+
+console.log(sum);
+*/
+
+
+//--------------------------------------
+
+
+//Ejercicio arr_048
+
+
+//Tenemos un array llamado numbers con números enteros al azar.
+//Utilizando reduce, queremos calcular la multiplicación de todos los números que están en el array.
+//Por ejemplo: Si tenemos [1, 2, 3, 4], la suma de todos los números es 24
+//Ayuda: ojo con el valor de comienzo
+/*
+var numbers = [6, 1, 34, 94, 3, 17];
+var mul = 0;
+
+var mul = numbers.reduce(function(total,numero){
+  return total*numero;
+})
+
+console.log(mul);
+*/
+
+
+//--------------------------------------
+
+
+//Ejercicio arr_049
+
+
+//Tenemos un array llamado notasDeTPs con números del 1 al 10, que representan las notas de los distintos trabajos prácticos entregados por Grace Hopper en el curso de Ada.
+//Usando reduce, queremos calcular la nota promedio final de trabajos prácticos (el promedio se calcula sumando todas las notas y dividiéndolo por la cantidad de notas).
+//Por ejemplo: Si tenemos [7, 8, 9, 10], la nota final es 8.5
+/*
+var notasDeTPs = [4, 7, 8, 5, 10];
+var notaFinal = 0;
+
+notaFinal = (notasDeTPs.reduce(function(total,nota){
+  return total + nota
+})
+) /notasDeTPs.length;
+// codea debajo de este comentario la solucion al ejercicio
+
+console.log(notaFinal);
+// deberia mostrar 6.8
+*/
+
+
+//--------------------------------------
+
+
+//Ejercicio arr_050
+
+
+//Tenemos un array en una variable libros con libros para leer sobre Javascript.
+//Usar la función reduce para crear un string con todos los titulos de los libros encerrados en una etiqueta <li></li>.
+//Mostrar por consola el array nuevo, encerrándolo entre <ul></ul>
+/*
+var librosDeJS = [
+  'JavaScript for Kids: A Playful Introduction to Programming',
+  'Composing Software',
+  'Eloquent JavaScript: A Modern Introduction to Programming',
+  'JavaScript: The Good Parts',
+  'Programming JavaScript Applications: Robust Web Architecture with Node, HTML5, and Moderns JS Libraries',
+  'Effective JavaScript: 68 Specific Ways to Harness the Power of JavaScript',
+  'JavaScript: The Definitive Guide',
+  'You Don’t Know JS',
+  'JavaScript Allongé: The Six Edition'
+];
+var array ='';
+array = librosDeJS.reduce(function(acomulador,libro){
+
+  return  <li+ libro + 
+
+})
+ console.log(array);
+
+ */
+// el resultado final debería ser
+// <ul><li>JavaScript for Kids: A Playful Introduction to Programming</li><li>Composing Software</li><li>Eloquent JavaScript: A Modern Introduction to Programming</li><li>JavaScript: The Good Parts</li><li>Programming JavaScript Applications: Robust Web Architecture with Node, HTML5, and Moderns JS Libraries</li><li>Effective JavaScript: 68 Specific Ways to Harness the Power of JavaScript</li><li>JavaScript: The Definitive Guide</li><li>You Don’t Know JS</li><li>JavaScript Allongé: The Six Edition</li></ul>
+
+
+//--------------------------------------
+
+
+//Ejercicio arr_051
+
+
+//Tenemos un array llamado numeros con números enteros al azar.
+//Utilizando reduce, queremos crear un nuevo array con todos los números, pero eliminando aquellos que estén repetidos.
+//Por ejemplo: Si tenemos [1, 4, 3, 2, 4], el nuevo array sería [1, 4, 3, 2]
+/*
+var numeros = [5, 1, 7, 12, 5, 2, 9, 0, 11, 9, 11];
+
+// codea debajo de este comentario la solucion al ejercicio
+var sinRepetidos = ;
+
+console.log(sinRepetidos);
+// deberia mostrar [ 5, 1, 7, 12, 2, 9, 0, 11 ]
+
+*/
+
+
+//--------------------------------------
+
+
+//Ejercicio arr_054
+
+
+//Tenemos un array en una variable costos con números que representan costos de diferentes productos.
+//Completar el siguiente código para obtener el precio final de cada producto y después calcular la suma total.
+//A un costo primero se le agrega la ganancia y después el IVA
+//Usar map y reduce
+/*
+var costos = [ 12.5, 56, 98 ];
+
+var agregarIVA = costos.map(function (costo) {
+  return costo * 1.21;
+})
+
+var sumarGanancia = agregarIVA.map(function (costo) {
+  return costo * 1.5;
+})
+
+var precioTotal = sumarGanancia.reduce(function(total,suma){
+  return total + suma
+})
+
+console.log(precioTotal); // 302.1975
+*/
+
+
+//--------------------------------------
+
+
+//Ejercicio arr_055
+
+
+//Tenemos un array en una variable datos con números al azar, que pueden ser tanto positivos como negativos
+//Queremos eliminar todos los números negativos
+//Con los números restantes, obtener el doble de cada uno
+//Finalmente, obtener la suma de todos los números
+/*
+var datos = [2, -4, 6, 0, 5, -1];
+
+var positivos = datos.map(function(numero){
+  if(numero>=0){
+    return numero
+  }else if(numero<0){
+    return numero*2
+  }
+});
+
+
+var total = positivos.reduce(function(total,numero){
+  return total + numero
+}) ;
+
+console.log(total); // 26 (a mi me da 3)
+*/
+
+
+//--------------------------------------
+
+
+//Ejercicio arr_056
+
+
+//Tenemos un array, que tiene como elementos otros arrays
+//A partir de ese array, queremos "aplanarlo" para conseguir un único array con todos los elementos
+//Por ejemplo: [ [1, 2], [3, 4], [5, 6] ] aplanado (flatten) sería igual a [ 1, 2, 3, 4, 5, 6 ]
+/*
+var arrays = [
+  [1, 2, 3],
+  [4],
+  [5, 6],
+  [],
+  [7]
+];
+
+var flattenArray = arrays.flat();
+
+console.log(flattenArray); // [ 1, 2, 3, 4, 5, 6, 7 ]
+*/
